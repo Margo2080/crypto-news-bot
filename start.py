@@ -1,13 +1,10 @@
-import time
 from notifier.global_runner import main
 
-print("🚀 Global crypto news bot started")
+print("🚀 Crypto news bot run started")
 
-while True:
-    try:
-        main()
-    except Exception as e:
-        print(f"❌ Ошибка: {e}")
-
-    # 30 минут
-    time.sleep(1800)
+try:
+    main()
+    print("✅ Run completed successfully")
+except Exception as e:
+    print(f"❌ Error: {e}")
+    raise
