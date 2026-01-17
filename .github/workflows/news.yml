@@ -3,11 +3,15 @@ name: Crypto News Bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"  # every hour
+    - cron: "0 * * * *"   # каждый час
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+
+    env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
     steps:
       - name: Checkout repository
