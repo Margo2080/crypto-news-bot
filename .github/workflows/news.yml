@@ -3,7 +3,7 @@ name: Crypto News Bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"  # every hour
 
 jobs:
   run-bot:
@@ -26,4 +26,3 @@ jobs:
       - name: Run bot
         run: |
           python start.py
-
