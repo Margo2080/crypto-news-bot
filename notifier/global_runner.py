@@ -18,11 +18,33 @@ NIGHT_END = 7     # 07:00
 
 # Ключевые слова для EMERGENCY (глобальных) новостей
 EMERGENCY_KEYWORDS = [
-    "sec", "etf", "fomc", "cpi", "inflation",
-    "ставк", "регулятор", "запрет", "запрещ",
-    "крах", "обвал", "черный лебедь",
-    "emergency", "crash", "ban", "approval", "lawsuit"
+    # Регуляторы и законы
+    "sec", "cftc", "regulator", "regulation", "law",
+    "закон", "регулятор", "запрет", "запрещ", "ban",
+    "approval", "lawsuit",
+
+    # Макроэкономика
+    "fomc", "cpi", "inflation", "interest rate",
+    "ставк", "ставки", "инфляц",
+
+    # ETF и институционалы
+    "etf", "spot etf",
+    "blackrock", "fidelity", "vanguard",
+    "institutional", "fund",
+
+    # Рынок и риски
+    "crash", "dump", "pump", "volatility",
+    "крах", "обвал", "волатиль",
+
+    # Банки и системные события
+    "bank", "bankruptcy", "default",
+    "банк", "банкрот", "дефолт",
+
+    # Чрезвычайные события
+    "emergency", "black swan",
+    "черный лебедь"
 ]
+
 
 # =========================
 # ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
